@@ -1,0 +1,84 @@
+/*header*/
+
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+
+.navigation ul {
+	list-style: none;
+	padding-left: 0;
+
+}
+
+.navigation a{
+	font-size: 12px;
+}
+
+.navigation a, .call-to-action h1 {
+	text-transform: uppercase;
+	text-decoration: none;
+	
+}
+
+.navigation li {
+	display: inline-block;
+}
+
+.call-to-action {
+	text-align: center;
+	padding: 100px 0 70px 0;
+}
+
+header {
+	background-image: url("images/header-bg.jpg");
+	color: white;
+	background-size: cover;
+}
+
+a{
+	color: white;
+}
+
+.navigation{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+ul{
+	display: inline-block;
+	float: right;
+}
+
+li{
+	padding: 0 15px;
+}
+
+.call-to-action h1 {
+	font-size: 50px;
+}
+
+.container{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.section-title{
+	background-color: #ec313c;
+	text-transform: uppercase;
+	padding: 10px 30px;
+	color: #fff;
+	font-weight: 200;
+	font-size: 15px;
+	
+}
+
+h2{
+	text-align: center;
+}
+
+/*aditional*/
+
+.clearfix::after {
+   display: block;
+   content: "";
+   clear: both;
+}
