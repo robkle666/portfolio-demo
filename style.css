@@ -4,6 +4,11 @@ body {
 	font-family: helvetica, arial, sans-serif;
 }
 
+.logo{
+	line-height: 44px;
+	padding-left: 10px;
+}
+
 .navigation ul {
 	list-style: none;
 	padding-left: 0;
@@ -17,9 +22,18 @@ body {
 	padding: 15px;
 }
 
-.navigation li:hover{
+.navigation a:hover{
 	background-color: rgba(255,255,255,0.2);
 }
+
+.navigation a:active{
+	background-color: rgba(255,255,255,0.4);
+}
+
+.navigation a:focus{
+	background-color: rgba(255,255,255,0.5);
+}
+
 
 .navigation a, .call-to-action h1 {
 	text-transform: uppercase;
@@ -42,20 +56,20 @@ header {
 	background-size: cover;
 }
 
-a{
+a {
 	color: white;
 }
 
-.navigation{
+.navigation {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
-ul{
+ul {
 	display: inline-block;
 	float: right;
 }
 
-li{
+li {
 	padding: 0 15px;
 }
 
@@ -63,12 +77,12 @@ li{
 	font-size: 50px;
 }
 
-.container{
+.container {
 	width: 1000px;
 	margin: 0 auto;
 }
 
-.section-title{
+.section-title {
 	background-color: #ec313c;
 	text-transform: uppercase;
 	padding: 10px 30px;
@@ -78,16 +92,42 @@ li{
 	
 }
 
-h2{
+h2 {
 	text-align: center;
 }
 
+.icon {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-image: url("images/intro-icons.png");
+}
 
+.psd .icon {
+    background-position: -60px 0;
+}
 
-/*aditional*/
+.programing .icon {
+	background-position: -120px 0;
+}
+
+.col-4:hover .icon {
+	background-image: url("images/intro-icons-hover.png")
+}
+
+/*aditional rules*/
 
 .clearfix::after {
    display: block;
    content: "";
    clear: both;
+}
+
+.col-4{
+	width: 33.33%;
+	float: left;
+	padding: 0 15px;
+	box-sizing: border-box;
+	text-align: center;
+	
 }
